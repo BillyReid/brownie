@@ -4,6 +4,8 @@ module Brownie
 
             env = Object.const_defined?(:Rails) ? Rails.env : nil
             staging = "wwwcie.ups.com"
+            # test production mode in staging
+            staging = "onlinetools.ups.com"
             production = "onlinetools.ups.com"
 
             if !env.nil?
